@@ -12,6 +12,50 @@ body {
     padding: 2vh 2vh 2vh 2vh;
 }
 
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: #ffc800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: backgroundFade 0.5s ease 1.5s forwards;
+}
+
+  #loader img {
+    width: min(65vw, 320px);
+    height: auto;
+    animation: logoMotion 1.5s ease-in-out forwards;
+  }
+
+  @keyframes logoMotion {
+    0% {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+    55% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+
+  @keyframes backgroundFade {
+    to {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+}
+
 nav {
     position: relative;
     background: #ffc800;
@@ -37,6 +81,15 @@ nav .left, nav .right {
 
 nav .right {
     justify-content: flex-end !important;
+}
+
+#main {
+    width: 100%;
+    height: calc(100vh - 11vh - 4vh);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5vh 0 5vh;
 }
 
 .background-container {

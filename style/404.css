@@ -1,0 +1,17 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main h1 {
+    margin-bottom: 3vh;
+    font-weight: 800;
+    font-size: 20vh;
+    color: #ffc800;
+}
+
+#main span {
+    font-weight: 800;
+}
