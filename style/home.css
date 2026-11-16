@@ -1,0 +1,60 @@
+#main {
+    width: 100%;
+    height: calc(100vh - 11vh - 4vh);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5vh 0 5vh;
+}
+
+#main .left {
+    width: 40%;
+    position: relative;
+}
+
+#main .right {
+    width: 60%;
+    position: relative;
+}
+
+#main h1 {
+    color: #000000;
+    font-weight: 1000;
+}
+
+#main h1, #main .left .all {
+    font-size: 10vh;
+}
+
+#main .left .all {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 1000;
+}
+
+#main .left p {
+    margin-top: 2vh;
+    width: 60vh;
+    text-align: justify;
+    font-weight: light;
+}
+
+#main .left .main-button {
+    margin-top: 3vh;
+    background: #ffc800;
+}
+
+#main .left .main-button span {
+    color: #000000;
+    font-weight: 700;
+}
+
+#main .right img {
+    width: 100%;
+    height: calc(100vh - 11vh - 4vh - 4vh);
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 100%);
+    mask-image: linear-gradient(to right, transparent, black 100%);
+    border-top-right-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
